@@ -46,6 +46,7 @@ const Integration : React.FC<Props> = ({ integration }) => {
                 <a
                     href={integration.link}
                     target='_blank'
+                    rel="noreferrer"
                 >
                     <Button
                         colorScheme="whiteAlpha"

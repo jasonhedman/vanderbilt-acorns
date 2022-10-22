@@ -26,6 +26,7 @@ const Header = () => {
                 <a
                     href='https://app.syndicate.io/collectives/0x1c0D5AAECaD71433eaEEd1c60912A6503d6B549B?chain=mainnet'
                     target='_blank'
+                    rel="noreferrer"
                 >
                     <Button
                         bg="brand.500"
@@ -40,6 +41,7 @@ const Header = () => {
             <Image 
                 src="/Acorn_Card.png"
                 height='200px'
+                alt='acorn card'
             />
         </Flex>
     </Card>
