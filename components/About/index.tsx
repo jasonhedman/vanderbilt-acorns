@@ -21,6 +21,7 @@ const About = () => {
                 <Flex
                     flexDirection="column"
                     gap={2}
+                    key={section.title}
                 >
                     <Text
                         fontSize='2xl'
