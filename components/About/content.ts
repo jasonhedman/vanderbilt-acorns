@@ -22,8 +22,12 @@ const sections: Section[] = [
         content: FeatureList()
     },
     {
-        title: "Next Steps",
+        title: "Replacing SSO",
         description: "In the short term, Acorn technology has the potential to replace Single Sign On (SSO) as a mechanism for verifying user identity."
+    },
+    {
+        title: "The Vision",
+        description: "Further down the road, Acorns have the potential to take our educational experiences and put them on the public ledger as a proof of work, backed with digital signatures of completing the course. Under this assumption, instructors and students would engage in two-way accountability, where academic tokens serve to accreditate students and teachers both. These academic tokens can be displayed publicly (or not) as an online library or “trophy case” of experiences and courses.This  vision would effectively create a more robust and effective résumé, and also allows for more opportunities to interface with companies. Education could become more \"collectable\" and valued. Institutional education would arguably improve because the individual classes would matter more as opposed to being bundled into a degree and hidden."
     }
 ]
 
