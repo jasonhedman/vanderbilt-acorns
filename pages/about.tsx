@@ -1,12 +1,11 @@
 import type { NextPage } from 'next'
-import Dashboard from '../components/Dashboard'
 
 import Default from '../layouts/Default'
 
 const Home: NextPage = () => {
   return (
     <Default>
-      <Dashboard />
+        About Page
     </Default>
   )
 }
