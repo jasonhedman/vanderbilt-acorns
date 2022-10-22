@@ -16,9 +16,12 @@ const Integration : React.FC<Props> = ({ integration }) => {
             <Flex
                 flexDirection="column"
                 gap={4}
+                h='100%'
+                justifyContent='space-between'
             >
                 <Flex
                     gap={8}
+                    alignItems='center'
                 >
                     <Image
                         src={integration.icon}
@@ -40,13 +43,16 @@ const Integration : React.FC<Props> = ({ integration }) => {
                         </Text>
                     </Flex>
                 </Flex>
-                <Link
+                <a
                     href={integration.link}
+                    target='_blank'
                 >
-                    <Button>
+                    <Button
+                        colorScheme="whiteAlpha"
+                    >
                         {integration.callToAction}
                     </Button>
-                </Link>
+                </a>
             </Flex>
         </Card>
     )

@@ -15,9 +15,14 @@ const Default : React.FC<Props> = ({ children }) => {
     >
         <Container
             maxW='3xl'
+            py={8}
         >
             <Navbar />
-            {children}
+            <Box
+                py={8}
+            >
+                {children}
+            </Box>
         </Container>
     </Box>
   )

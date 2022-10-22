@@ -40,11 +40,19 @@ const ConnectWallet = () => {
 
     if(isConnected && address) {
         return (
-            <Menu>
-                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            <Menu
+                colorScheme="whiteAlpha"
+            >
+                <MenuButton 
+                    as={Button} 
+                    rightIcon={<ChevronDownIcon />}
+                    colorScheme="whiteAlpha"
+                >
                     {getEllipsisTxt(address)}
                 </MenuButton>
-                <MenuList>
+                <MenuList
+                    
+                >
                     <MenuItem
                         onClick={() => onDisconnect()}
                     >

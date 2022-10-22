@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text, Box } from '@chakra-ui/react'
+import { Text, Flex, SimpleGrid } from '@chakra-ui/react'
 
 import Integration from './Integration'
 
@@ -8,14 +8,21 @@ import integrations from '../../../data/integrations'
 
 const Integrations = () => {
   return (
-    <Box>
+    <Flex
+        flexDirection="column"
+        gap={4}
+    >
         <Text
             fontSize="xl"
             fontWeight="bold"
         >
             Integrations
         </Text>
-        {
+        <SimpleGrid
+            columns={2}
+            gap={4}
+        >
+            {
                 integrations.map((integration) => (
                     <Integration 
                         key={integration.name}
@@ -23,7 +30,8 @@ const Integrations = () => {
                     />
                 ))
             }
-    </Box>
+        </SimpleGrid>
+    </Flex>
   )
 }
 

@@ -1,5 +1,5 @@
 import { ComponentStyleConfig } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+
 const Card : ComponentStyleConfig = {
   baseStyle: {
     p: "20px",
@@ -10,15 +10,11 @@ const Card : ComponentStyleConfig = {
     position: "relative",
     minWidth: "0px",
     wordWrap: "break-word",
-    bg: mode("#ffffff", "navy.800"),
+    bg: 'navbar.500',
     backgroundClip: "border-box",
     rounded:'lg',
     shadow: 'xl'
   },
 };
 
-export const CardComponent = {
-  components: {
-    Card,
-  },
-};
+export default Card;

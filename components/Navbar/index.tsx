@@ -14,10 +14,14 @@ const Navbar = () => {
         w='100%'
         gap={4}
         h='60px'
+        bg='navbar.500'
+        px={4}
+        rounded='md'
     >
         <Text
             fontSize='xl'
             fontWeight='bold'
+            color='brand.500'
         >
             Vanderbilt Acorns
         </Text>
