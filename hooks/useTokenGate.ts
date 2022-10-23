@@ -9,7 +9,6 @@ const useTokenGate = (userAddress: `0x${string}`, backdoor = false) => {
         abi: erc721ABI,
         functionName: 'balanceOf',
         args: [userAddress],
-        watch: true,
     })
 
     return {

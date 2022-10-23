@@ -4,13 +4,16 @@ import { Flex, Image, Text, Button } from '@chakra-ui/react'
 
 import Card from '../../utilities/Card'
 import { Integration } from '../../../data/integrations'
-import Link from 'next/link'
+import useIntegration from '../../../hooks/useIntegration'
 
 interface Props {
     integration: Integration
 }
 
 const Integration : React.FC<Props> = ({ integration }) => {
+
+    const { isButtonDisabled } = useIntegration(integration.guildAccessRequired);
+
     return (
         <Card>
             <Flex
@@ -50,6 +53,7 @@ const Integration : React.FC<Props> = ({ integration }) => {
                 >
                     <Button
                         colorScheme="whiteAlpha"
+                        disabled={isButtonDisabled}
                     >
                         {integration.callToAction}
                     </Button>

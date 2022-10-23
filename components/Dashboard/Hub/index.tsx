@@ -9,8 +9,8 @@ import IntegrationInfo from './IntegrationInfo'
 const Hub = () => {
   return (
     <Flex
-        flexDirection="column"
-        gap={4}
+      flexDirection="column"
+      gap={4}
     >
         <Header />
         <IntegrationInfo />
