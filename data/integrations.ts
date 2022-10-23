@@ -14,6 +14,13 @@ const integrations: Integration[] = [
 		link: 'https://app.syndicate.io/clubs/0x11602016329d49996076a44c642d666973113124?chain=mainnet',
 		callToAction: 'Join Syndicate',
 	},
+	{
+		name: 'Vanderbilt Governance',
+		description: 'Vanderbilt Governance is a community-driven voting platform for Vanderbilt students.',
+		icon: 'https://pbs.twimg.com/profile_images/1305394576602013698/Tvz6UU5R_400x400.jpg',
+		link: 'https://snapshot.org/#/js0n.eth',
+		callToAction: 'Start Voting',
+	},
     {
 		name: 'Google Workspace',
 		description: 'Access Vanderbilt-exclusive Google Suite workspace for Acorn holders.',
