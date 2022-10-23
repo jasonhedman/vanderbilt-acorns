@@ -2,7 +2,11 @@ import { Button, Text, Flex, Image } from '@chakra-ui/react'
 import React from 'react'
 import Card from '../../utilities/Card'
 
-const MintingPage = () => {
+interface Props {
+    useBackdoor: () => void
+}
+
+const MintingPage : React.FC<Props> = ({ useBackdoor }) => {
 
     return (
         <Card>
@@ -26,21 +30,32 @@ const MintingPage = () => {
                     <Text>
                         Minting an Acorn grants you access to the Acorns Hub, which includes the Vanderbilt Syndicate Investment Club, Snapshot Governance DAO, token-gated Google Workspace and GitHub, private Discord server, and Telegram messaging group.
                     </Text>
-                    <a
-                        href='https://app.syndicate.io/collectives/0x1c0D5AAECaD71433eaEEd1c60912A6503d6B549B?chain=mainnet'
-                        target='_blank'
-                        rel='noreferrer'
+                    <Flex
+                        gap={4}
                     >
-                        <Button
-                            bg="brand.500"
-                            colorScheme="brand"
-                            _hover={{
-                                bg: 'brand.800',
-                            }}
+                        <a
+                            href='https://app.syndicate.io/collectives/0x1c0D5AAECaD71433eaEEd1c60912A6503d6B549B?chain=mainnet'
+                            target='_blank'
+                            rel='noreferrer'
                         >
-                            Mint
+                            <Button
+                                bg="brand.600"
+                                colorScheme="brand"
+                                _hover={{
+                                    bg: 'brand.800',
+                                }}
+                            >
+                                Mint
+                            </Button>
+                        </a>
+                        <Button
+                            variant='ghost'
+                            colorScheme={'whiteAlpha'}
+                            onClick={useBackdoor}
+                        >
+                            {'Bypass (Demo)'}
                         </Button>
-                    </a>
+                    </Flex>
                 </Flex>
                 <Image 
                     src="/AcornSQUARE.png"

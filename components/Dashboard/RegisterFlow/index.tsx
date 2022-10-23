@@ -1,11 +1,15 @@
 import React from 'react'
 
 import useRegister from '../../../hooks/useRegister'
-import AwaitingVerification from './AwaitingVerification';
 import MintingPage from './MintingPage';
 import RegistrationForm from './RegistrationForm';
 
-const RegisterFlow = () => {
+interface Props {
+  useBackdoor: () => void
+}
+
+
+const RegisterFlow : React.FC<Props> = ({ useBackdoor}) => {
 
   const { 
     blur, 
@@ -18,7 +22,9 @@ const RegisterFlow = () => {
 
   if(registered) {
     return (
-      <MintingPage />
+      <MintingPage 
+        useBackdoor={useBackdoor}
+      />
       // <AwaitingVerification 
       //   email={email}
       // />

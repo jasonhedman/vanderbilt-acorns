@@ -1,5 +1,4 @@
-import { Text } from '@chakra-ui/react';
-import React from 'react'
+import React, {useState} from 'react'
 
 import useTokenGate from '../../hooks/useTokenGate';
 import Hub from './Hub';
@@ -11,11 +10,21 @@ interface Props {
 
 const TokenGate : React.FC<Props> = ({ userAddress }) => {
 
-    const { isTokenOwned } = useTokenGate(userAddress);
+    const [backdoor, setBackdoor] = useState(false)
+
+    const useBackdoor = () => {
+        setBackdoor(true)
+    }
+
+    console.log('backdoor', backdoor);
+    
+    const { isTokenOwned } = useTokenGate(userAddress, backdoor);
 
     if(!isTokenOwned) {
         return (
-            <RegisterFlow />
+            <RegisterFlow 
+                useBackdoor={useBackdoor}
+            />
         )
     }
 

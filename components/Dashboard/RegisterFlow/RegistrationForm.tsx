@@ -33,7 +33,7 @@ const RegistrationForm : React.FC<Props> = ({
           Enter your Vanderbilt email:
         </Text>
         <Text>
-          We will send you a verification email to verify your account.
+          We use your email to verify your Vanderbilt affiliation.
         </Text>
         <Input
           placeholder="Email"

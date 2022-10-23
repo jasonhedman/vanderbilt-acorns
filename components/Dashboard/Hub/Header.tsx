@@ -39,7 +39,7 @@ const Header = () => {
                 >
                     <Button
                         bg="brand.500"
-                        color="black"
+                        colorScheme="brand"
                         _hover={{
                             bg: 'brand.800',
                             color: 'white'
