@@ -14,7 +14,7 @@ const sections: Section[] = [
     },
     {
         title: "What is an Acorn?",
-        description: "An Acorn is a digital certificate that verifies one’s distinction in the Vanderbilt community. An Acorn grants the user access to the Acorn Platform, which serves as a unifying Hub for Vanderbilt identities and communities. Currently, there lacks a central, unified platform for interacting with members of the Vanderbilt community (students, instructors, administrators, alumni, etc.). Acorn addresses this by providing each member of the community a unique and immutable certificate verifying their identity, and granting them access to protected services and communities."
+        description: "An Acorn is an ERC-721M NFT that grants access to Vanderbilt\’s own token-gated ecosystem. An Acorn grants the user access to the Acorn Hub, which serves as a central Hub for Vanderbilt communities. Currently, there lacks a central, unified platform for interacting with members of the Vanderbilt community (students, instructors, administrators, alumni, etc.). Acorn addresses this by providing each member of the community a unique and immutable certificate verifying their identity, and granting them access to protected services and communities. "
     },
     {
         title: "Acorn Hub",
@@ -23,7 +23,7 @@ const sections: Section[] = [
     },
     {
         title: "Replacing SSO",
-        description: "In the short term, Acorn technology has the potential to replace Single Sign On (SSO) as a mechanism for verifying user identity."
+        description: "In the short term, Acorn technology has the potential to replace Single Sign On (SSO) as a mechanism for verifying user identity. The Acorn is non-transferrable, meaning it is an immutable record of one’s Vanderbilt standing."
     },
     {
         title: "The Vision",
