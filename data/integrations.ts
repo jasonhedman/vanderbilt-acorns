@@ -41,7 +41,7 @@ const integrations: Integration[] = [
         name: 'GitHub',
         description: 'View Vanderbilt\'s exclusive Github repository, filled with resources for students.',
         icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-        link: 'https://github.com/vascosinghvu/Vanderbilt-Acorns',
+        link: 'https://github.com/jasonhedman/vanderbilt-acorns',
         callToAction: 'Join GitHub Repo',
 		guildAccessRequired: true,
 	},
