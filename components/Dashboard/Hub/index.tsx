@@ -4,6 +4,7 @@ import { Flex } from '@chakra-ui/react'
 
 import Integrations from './Integrations'
 import Header from './Header'
+import IntegrationInfo from './IntegrationInfo'
 
 const Hub = () => {
   return (
@@ -12,6 +13,7 @@ const Hub = () => {
         gap={4}
     >
         <Header />
+        <IntegrationInfo />
         <Integrations />
     </Flex>
   )

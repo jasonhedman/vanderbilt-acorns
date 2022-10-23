@@ -9,14 +9,14 @@ export interface Integration {
 const integrations: Integration[] = [
 	{
 		name: 'Vanderbilt Syndicate',
-		description: 'Vanderbilt Syndicate is an investment club that allows students to create a collective portfolio.',
+		description: 'Make collective crypto investments with other Vanderbilt Acorn holders.',
 		icon: 'https://pbs.twimg.com/profile_images/1485994038150975505/t3NICoK9_400x400.jpg',
 		link: 'https://app.syndicate.io/clubs/0x11602016329d49996076a44c642d666973113124?chain=mainnet',
 		callToAction: 'Join Syndicate',
 	},
 	{
 		name: 'Vanderbilt Governance',
-		description: 'Vanderbilt Governance is a community-driven voting platform for Vanderbilt students.',
+		description: 'Propose administrative changes through a token-gated voting platform.',
 		icon: 'https://pbs.twimg.com/profile_images/1305394576602013698/Tvz6UU5R_400x400.jpg',
 		link: 'https://snapshot.org/#/js0n.eth',
 		callToAction: 'Start Voting',
@@ -25,7 +25,7 @@ const integrations: Integration[] = [
 		name: 'Google Workspace',
 		description: 'Access Vanderbilt-exclusive Google Suite workspace for Acorn holders.',
 		icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/1200px-Google_Drive_logo.png',
-		link: 'https://guild.xyz/vanderbilt-acorn',
+		link: 'https://drive.google.com/drive/folders/12fAhVkgD6vvZjb-Ls3BMh9Ptms5LfmhO',
 		callToAction: 'Join Google Workspace',
 	},
 	{
@@ -37,14 +37,14 @@ const integrations: Integration[] = [
 	},
     {
 		name: 'Discord',
-		description: 'Enter our Token-gated Discord to find and interact with new communities within the Vanderbilt network.',
+		description: 'Find and interact with new communities through our exclusive Discord.',
 		icon: 'https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png',
 		link: 'https://guild.xyz/vanderbilt-acorn',
 		callToAction: 'Join Discord Server',
 	},
     {
 		name: 'Telegram',
-		description: 'Enter our Token-gated Telegram to use encrypted video conferencing and instant messaging.',
+		description: 'Make encrypted video conferences and send instant messages with other members.',
 		icon: 'https://www.freepnglogos.com/uploads/telegram-logo-png-0.png',
 		link: 'https://guild.xyz/vanderbilt-acorn',
 		callToAction: 'Join Telegram Channel',

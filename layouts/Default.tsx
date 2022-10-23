@@ -19,7 +19,7 @@ const Default : React.FC<Props> = ({ children }) => {
         >
             <Navbar />
             <Box
-                py={8}
+                py={4}
             >
                 {children}
             </Box>

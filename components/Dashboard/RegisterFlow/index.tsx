@@ -3,26 +3,12 @@ import React, { ChangeEvent } from 'react'
 import { Input, Text, Flex, Button } from '@chakra-ui/react'
 
 import Card from '../../utilities/Card'
+import useRegister from '../../../hooks/useRegister'
 
 const RegisterFlow = () => {
 
 
-  const [email, setEmail] = React.useState('')
-  const [error, setError] = React.useState(true);
-  const [blur, setBlur] = React.useState(false);
-
-  const handleEmailChange = (e : ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  }
-
-  const handleEmailBlur = () => {
-    setBlur(true);
-    if(email.includes('@vanderbilt.edu')){
-      setError(false);
-    } else {
-      setError(true);
-    }
-  }
+  const { blur, error, handleEmailBlur, handleEmailChange, handleEmailSubmit } = useRegister();
 
   return (
     <Card>
@@ -53,7 +39,7 @@ const RegisterFlow = () => {
           disabled={error}
           colorScheme='brand'
           bg='brand.500'
-          onClick={() => console.log('clicked')}
+          onClick={() => handleEmailSubmit()}
         >
           Verify
         </Button>

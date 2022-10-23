@@ -10,18 +10,23 @@ const Header = () => {
     >
         <Flex
             gap={8}
+            alignItems='center'
+            justifyContent='space-between'
         >
             <VStack
                 alignItems='flex-start'
             >
                 <Text
-                    fontSize="2xl"
+                    fontSize="3xl"
                     fontWeight="bold"
+                    color='brand.500'
                 >
                     Welcome to Vanderbilt Acorns
                 </Text>
-                <Text>
-                    Acorns are your entrance to a the next generation of identity and community at Vanderbilt. Currently, owning an Acorn grants you access to the Vanderbilt Syndicate investment club, token-gated Google Workspace and GitHub, private Discord server, and Telegram messaging group.
+                <Text
+                    fontSize="xl"
+                >
+                    Your Vanderbilt identity, reimagined.
                 </Text>
                 <a
                     href='https://app.syndicate.io/collectives/0x1c0D5AAECaD71433eaEEd1c60912A6503d6B549B?chain=mainnet'
@@ -30,8 +35,10 @@ const Header = () => {
                 >
                     <Button
                         bg="brand.500"
+                        color="black"
                         _hover={{
-                            bg: 'brand.800'
+                            bg: 'brand.800',
+                            color: 'white'
                         }}
                     >
                         View Collective
@@ -39,7 +46,7 @@ const Header = () => {
                 </a>
             </VStack>
             <Image 
-                src="/Acorn_Card.png"
+                src="/AcornSQUARE.png"
                 height='200px'
                 alt='acorn card'
             />

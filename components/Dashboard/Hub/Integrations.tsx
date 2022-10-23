@@ -15,6 +15,7 @@ const Integrations = () => {
         <Text
             fontSize="xl"
             fontWeight="bold"
+            color='brand.500'
         >
             Integrations
         </Text>
