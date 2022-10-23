@@ -1,9 +1,10 @@
 import React from 'react'
 
-import { Box, Button, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Text } from '@chakra-ui/react'
 
 import { useConnect } from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
+import Card from './Card'
 
 const NotConnected = () => {
 
@@ -12,16 +13,28 @@ const NotConnected = () => {
     })
 
     return (
-        <Box>
-            <Text>
-                You are not connected to the Ethereum network
-            </Text>
-            <Button
-                onClick={() => connect()}
+        <Card>
+            <Flex
+                flexDirection='column'
+                alignItems='center'
+                gap={2}
             >
-                Connect Wallet
-            </Button>
-        </Box>
+                <Text
+                    fontSize="2xl"
+                    fontWeight="bold"
+                >
+                    Not Connected
+                </Text>
+                <Text>
+                    Please connect your wallet to continue.
+                </Text>
+                <Button
+                    onClick={() => connect()}
+                >
+                    Connect Wallet
+                </Button>
+            </Flex>
+        </Card>
     )
 }
 

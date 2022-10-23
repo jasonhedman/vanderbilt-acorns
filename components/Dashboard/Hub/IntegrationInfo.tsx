@@ -23,6 +23,7 @@ const IntegrationInfo = () => {
             </Text>
             <Image 
                 src="/LandingFINAL.png"
+                alt='eco'
             />
         </Flex>
     </Card>

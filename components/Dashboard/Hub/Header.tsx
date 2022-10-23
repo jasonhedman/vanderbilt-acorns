@@ -26,7 +26,11 @@ const Header = () => {
                 <Text
                     fontSize="xl"
                 >
-                    Your Vanderbilt identity, reimagined.
+                    Your Vanderbilt identity,{' '} 
+                    <Text 
+                        as={'span'}
+                        fontWeight='bold'
+                    >reimagined.</Text>
                 </Text>
                 <a
                     href='https://app.syndicate.io/collectives/0x1c0D5AAECaD71433eaEEd1c60912A6503d6B549B?chain=mainnet'

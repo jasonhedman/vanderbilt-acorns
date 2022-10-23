@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Flex, Text, HStack } from '@chakra-ui/react'
+import { Flex, Text, HStack, Image } from '@chakra-ui/react'
 
 import ConnectWallet from './ConnectWallet'
 import NavLink from './NavLink'
@@ -18,13 +18,11 @@ const Navbar = () => {
         px={4}
         rounded='md'
     >
-        <Text
-            fontSize='xl'
-            fontWeight='bold'
-            color='brand.500'
-        >
-            Vanderbilt Acorns
-        </Text>
+        <Image 
+            src="/acorn.png"
+            height='40px'
+            alt='acorn card'
+        />
         <HStack
             mr='auto'
         >
