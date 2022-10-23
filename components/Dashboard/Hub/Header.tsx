@@ -12,9 +12,10 @@ const Header = () => {
             gap={8}
             alignItems='center'
             justifyContent='space-between'
+            flexDirection={{base: 'column-reverse', md: 'row'}}
         >
             <VStack
-                alignItems='flex-start'
+                alignItems={{base: 'center', md: 'flex-start'}}
             >
                 <Text
                     fontSize="3xl"

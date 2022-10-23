@@ -20,7 +20,7 @@ const Integrations = () => {
             Integrations
         </Text>
         <SimpleGrid
-            columns={2}
+            columns={{base: 1, md: 2}}
             gap={4}
         >
             {

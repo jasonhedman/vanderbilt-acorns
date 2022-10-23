@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Flex, Text, HStack, Image } from '@chakra-ui/react'
+import { Flex, Box, HStack, Image } from '@chakra-ui/react'
 
 import ConnectWallet from './ConnectWallet'
 import NavLink from './NavLink'
@@ -36,7 +36,11 @@ const Navbar = () => {
                 ))
             }
         </HStack>
-        <ConnectWallet />
+        <Box
+            display={{base: 'none', md: 'block'}}
+        >
+            <ConnectWallet />
+        </Box>
     </Flex>
   )
 }
