@@ -21,6 +21,7 @@ const Integration : React.FC<Props> = ({ integration }) => {
                 gap={4}
                 h='100%'
                 justifyContent='space-between'
+                alignItems='center'
             >
                 <Flex
                     gap={8}
