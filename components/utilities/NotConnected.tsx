@@ -30,6 +30,8 @@ const NotConnected = () => {
                 </Text>
                 <Button
                     onClick={() => connect()}
+                    variant='ghost'
+                    colorScheme='whiteAlpha'
                 >
                     Connect Wallet
                 </Button>

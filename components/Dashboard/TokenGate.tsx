@@ -1,3 +1,4 @@
+import { CircularProgress, VStack } from '@chakra-ui/react';
 import React, {useState} from 'react'
 
 import useTokenGate from '../../hooks/useTokenGate';
@@ -15,10 +16,21 @@ const TokenGate : React.FC<Props> = ({ userAddress }) => {
     const useBackdoor = () => {
         setBackdoor(true)
     }
-
-    console.log('backdoor', backdoor);
     
-    const { isTokenOwned } = useTokenGate(userAddress, backdoor);
+    const { isTokenOwned, isLoading } = useTokenGate(userAddress, backdoor);
+
+    if(isLoading) {
+        return (
+            <VStack>
+                <CircularProgress
+                    isIndeterminate
+                    color="brand.500"
+                    trackColor='transparent'
+                    size='70px'
+                />
+            </VStack>
+        )
+    }
 
     if(!isTokenOwned) {
         return (

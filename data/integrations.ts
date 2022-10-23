@@ -29,10 +29,17 @@ const integrations: Integration[] = [
 		callToAction: 'Join Google Workspace',
 	},
 	{
+		name: 'Guild',
+		description: 'Access shared workspaces, documents, chats, events, and more.',
+		icon: 'https://pbs.twimg.com/profile_images/1436774361399189507/L8tmHbzm_400x400.jpg',
+		link: 'https://guild.xyz/vanderbilt-acorn',
+		callToAction: 'Join Guild',
+	},
+	{
         name: 'GitHub',
         description: 'View Vanderbilt\'s exclusive Github repository, filled with resources for students.',
         icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-        link: 'https://guild.xyz/vanderbilt-acorn',
+        link: 'https://github.com/vascosinghvu/Vanderbilt-Acorns',
         callToAction: 'Join GitHub Repo',
 	},
     {
