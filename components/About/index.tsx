@@ -21,11 +21,12 @@ const About = () => {
         </Card>
         {
             content.map((section) => (
-                <Card>
+                <Card
+                 key={section.title}
+                >
                     <Flex
                         flexDirection="column"
                         gap={2}
-                        key={section.title}
                     >
                         <Text
                             fontSize='2xl'
